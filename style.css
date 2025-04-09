@@ -25,33 +25,41 @@ a {
     font-size: "Jost", sans-serif;
     text-decoration: none;
     color: #292F36;
-}                          /* une classe par fonction */               
+}                    /* une classe par fonction */               
 
 li {
     list-style: none;
-}                           /* une classe par fonction */
+}                    /* une classe par fonction */
 
 h1 {
     font-family: "DM serif Display", serif;
     font-size: 85px;
-}                               /* une classe par fonction */
+}                    /* une classe par fonction */
 
 h2 {
     font-family: "DM Serif Display", serif;
     font-size: 50px;
-    margin-bottom: 30px
-}                               /* une classe par fonction */
+    margin-bottom: 30px;
+    width: 100%;
+}                    /* une classe par fonction */
 
 h3 {
     font-family: "DM Serif Display", serif;
     font-size: 22px;
     margin-bottom: 15px;
-}                               /* une classe par fonction */
+}                    /* une classe par fonction */
 
 p {
     font-family: "Jost", sans-serif;
     font-size: 15px;
-}             /* une classe par fonction */
+}                    /* une classe par fonction */
+
+
+.bold{
+    font-weight: 700;
+}
+
+
          
 
                 /* PROPRIETE FLEX BLOX*/
@@ -101,7 +109,11 @@ p {
 
 .width30 {
     width: 30%;
-}                       /* une classe par fonction */
+}  
+                     /* une classe par fonction */
+.width40{
+    width:40%;
+}
 
 .width45 {
     width: 45%;
@@ -164,4 +176,64 @@ p {
 
 .pSectionDevis{
     margin-bottom: 15px;
+}
+
+
+/* SECTION CLIENTS */
+
+.card{
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.sectionAvis {
+    background-color: #F4F0EC;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.card>div {
+    width: 70%;
+    background-color: white;
+}
+
+.card>img{
+    width: 20%;
+}
+
+.card>p{
+    margin-top: 30px;
+}
+
+.nomProfil{
+    font-family: "DM Serif Display", serif;
+    font-size: 18px;
+}
+
+
+ /* SECTION NOS PARTENAIRES */
+
+   /* SECTION NOS PROJETS*/
+
+.cardProjets{
+    background-color:white;
+}
+.cardProjets>img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.cardProjets > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F0EC;
+    width: 70px;
+    height:70px;
+    border-radius: 100px;
+}
+
+.containerCardProjet {
+    margin-top: 50px;
 }
