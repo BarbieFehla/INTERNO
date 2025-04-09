@@ -1,76 +1,136 @@
+/* Importation de la police "Inter" depuis Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* -------- RESET CSS -------- */
+/* Réinitialise le box model pour tous les éléments, 
+   et supprime les marges et paddings par défaut */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}                   
+                  
+
+
+                       /* CLASSE GENERALE */
+
+body {
+    color: #292F36;
+}                       /* une classe par fonction*/               
+
 
 a {
+    font-size: "Jost", sans-serif;
     text-decoration: none;
-}
+    color: #292F36;
+}                          /* une classe par fonction */               
 
 li {
     list-style: none;
-}
+}                           /* une classe par fonction */
 
-h1{
+h1 {
     font-family: "DM serif Display", serif;
     font-size: 85px;
-    
-}
-h2{
+}                               /* une classe par fonction */
+
+h2 {
     font-family: "DM Serif Display", serif;
     font-size: 50px;
-}
+    margin-bottom: 30px
+}                               /* une classe par fonction */
 
-p{
-    font-size:"Jost", sans-serif;
+h3 {
+    font-family: "DM Serif Display", serif;
     font-size: 22px;
-}
+    margin-bottom: 15px;
+}                               /* une classe par fonction */
+
+p {
+    font-family: "Jost", sans-serif;
+    font-size: 15px;
+}             /* une classe par fonction */
+         
+
+                /* PROPRIETE FLEX BLOX*/
 
 .flex {
     display: flex;
     flex-wrap: wrap;
-
-}
+}                           /* une classe par fonction */
 
 .spaceBetween {
     justify-content: space-between;
-}
+}                           /* une classe par fonction */
 
 .alignCenter {
     align-items: center;
+}                          /* une classe par fonction */
+
+.gap20{
+    gap:20px;
 }
 
+      /* FIN DE PROPRIETE FLEXBLOX */
 
 .container {
     max-width: 1000px;
     margin: auto;
+}                     /* une classe par fonction */ /* contenir */
+
+.btn {
+    background-color: #292F36;
+    color: #F4F0EC;
+    border-radius: 18px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    display: inline-block;
+    margin-top: 40px;
 }
 
-.bouton{
-background-color:#4D5053;
-color:#F4F0EC;
-border-radius:18px;
-padding: 26px 48px;
-display: inline-block;
-}
 
 
-/* HEADER */
+/* une classe par fonction */
+      
+
+                     /* HAUTEURS */
+
+.width30 {
+    width: 30%;
+}                       /* une classe par fonction */
+
+.width45 {
+    width: 45%;
+}                       /* une classe par fonction */
+
+.paddingTop100 {
+    padding-top: 100px;
+}                       /* une classe par fonction */
+
+.textCenter {
+    text-align: center;
+}                         /* une classe par fonction */
+
+
+
+
+                    /* HEADER */
 
 .logo {
     width: 200px;
-}
+}                         /* une classe par fonction */
 
 .menu {
     width: 30%;
-}
+}                          /* une classe par fonction */
 
 .top20 {
     margin-top: 20px;
-}
+}                           /* une classe par fonction */
 
 /* SECTION HERO */
 
@@ -80,4 +140,28 @@ display: inline-block;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0 0 0 200px;
+    padding-top: 100px;
+}
+
+.pHero {
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+/* SECTION VALEURS AJOUTEES */
+
+
+
+/* SECTION DEVIS */
+
+.imgSectionDevis{
+    border-radius: 0 220px 0 100px;
+}
+
+.iconCall{
+    width:30px;
+}
+
+.pSectionDevis{
+    margin-bottom: 15px;
 }
